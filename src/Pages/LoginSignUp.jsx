@@ -15,7 +15,7 @@ const LoginSignUp = () => {
   const login = async () => {
     console.log("Login function executed", formData);
     let responseData;
-    await fetch("http://127.0.0.1:4000/login", {
+    await fetch("https://shopper-backend-pmns.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
@@ -36,7 +36,7 @@ const LoginSignUp = () => {
   const signup = async () => {
     console.log("Signup function executed", formData);
     let responseData;
-    await fetch("http://127.0.0.1:4000/signup", {
+    await fetch("https://shopper-backend-pmns.onrender.com/signup", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
