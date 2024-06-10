@@ -15,11 +15,11 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
-    fetch("https://shopper-backend-pmns.onrender.com/allproducts")
+    fetch("http://127.0.0.1:4000/allproducts")
       .then((response) => response.json())
       .then((data) => setAllProducts(data));
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shopper-backend-pmns.onrender.com/getcart", {
+      fetch("http://127.0.0.1:4000/getcart", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -36,7 +36,7 @@ const ShopContextProvider = (props) => {
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shopper-backend-pmns.onrender.com/addtocart", {
+      fetch("http://127.0.0.1:4000/addtocart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -53,7 +53,7 @@ const ShopContextProvider = (props) => {
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shopper-backend-pmns.onrender.com/removefromcart", {
+      fetch("http://127.0.0.1:4000/removefromcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",

@@ -1,10 +1,10 @@
 import React, { useContext, useRef, useState } from "react";
 import "./Navbar.css";
-import logo from "../Assets/logo.png";
-import cart_icon from "../Assets/cart_icon.png";
+import logo from "../../../public/Assets/logo.png";
+import cart_icon from "../../../public/Assets/cart_icon.png";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/Shopcontext";
-import nav_dropdown from "../Assets/nav_dropdown.jpg";
+import nav_dropdown from "../../../public/Assets/nav_dropdown.jpg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");

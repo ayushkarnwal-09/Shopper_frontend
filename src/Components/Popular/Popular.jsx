@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const Popular = () => {
   const [popularProducts, setPopularProducts] = useState([]);
   useEffect(() => {
-    fetch("https://shopper-backend-pmns.onrender.com/popularinwomen")
+    fetch("http://127.0.0.1:4000/popularinwomen")
       .then((response) => response.json())
       .then((data) => setPopularProducts(data));
   }, []);
@@ -13,6 +13,7 @@ const Popular = () => {
       <h1>Popular in Women</h1>
       <hr />
       <div className="popular-item">
+        .
         {popularProducts.map((item, i) => {
           return (
             <Item
