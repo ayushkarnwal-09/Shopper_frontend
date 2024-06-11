@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Screenshots 
+
+![image](https://github.com/ayushkarnwal-09/Shopper_frontend/assets/106623717/df4fa4ec-3891-4c08-9b06-5cb153531e8e)
+![image](https://github.com/ayushkarnwal-09/Shopper_frontend/assets/106623717/11642e0d-7090-4bfd-af73-48b8d38e964d)
+![image](https://github.com/ayushkarnwal-09/Shopper_frontend/assets/106623717/1b6d989f-9545-432e-9d35-f81d1b8749e4)
+![image](https://github.com/ayushkarnwal-09/Shopper_frontend/assets/106623717/522b7a13-5d25-46a1-9fa6-65d0af1965bc)
+![image](https://github.com/ayushkarnwal-09/Shopper_frontend/assets/106623717/24ceb8d5-3325-4793-b6bf-03894cb0ab4d)
+![image](https://github.com/ayushkarnwal-09/Shopper_frontend/assets/106623717/3477980e-0318-4767-bdd0-dfc8ad7794a4)
+
+
+
+
+
+
