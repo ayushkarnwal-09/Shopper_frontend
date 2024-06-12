@@ -17,9 +17,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="nav-logo">
-        <img src={logo} alt="" />
-        <p>SHOPPER</p>
+      <div>
+        <Link className="nav-logo" to={"/"} style={{ textDecoration: "none" }}>
+          <img src={logo} alt="" />
+          <p>SHOPPER</p>
+        </Link>
       </div>
       <img
         className="nav-dropdown"

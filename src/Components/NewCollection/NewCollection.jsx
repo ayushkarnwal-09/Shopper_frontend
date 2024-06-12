@@ -1,8 +1,8 @@
 import "./NewCollection.css";
 import Item from "../Item/Item";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const NewCollection = () => {
+const NewCollection = ({ new_collections }) => {
   const [new_collection, setNew_collection] = useState([]);
   useEffect(() => {
     fetch("https://shopper-backend-pmns.onrender.com/newcollections")
@@ -10,24 +10,26 @@ const NewCollection = () => {
       .then((data) => setNew_collection(data));
   }, []);
   return (
-    <div className="new-collections">
-      <h1>New Collection</h1>
-      <hr />
-      <div className="collections">
-        {new_collection.map((item, i) => {
-          return (
-            <Item
-              key={i}
-              id={item.id}
-              name={item.name}
-              image={item.image}
-              new_price={item.new_price}
-              old_price={item.old_price}
-            />
-          );
-        })}
+    <>
+      <div ref={new_collections} className="new-collections">
+        <h1>New Collection</h1>
+        <hr />
+        <div className="collections">
+          {new_collection.map((item, i) => {
+            return (
+              <Item
+                key={i}
+                id={item.id}
+                name={item.name}
+                image={item.image}
+                new_price={item.new_price}
+                old_price={item.old_price}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default NewCollection;
